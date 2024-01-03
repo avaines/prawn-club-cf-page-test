@@ -1,0 +1,32 @@
+baseURL: 'https://prawn.fun'
+title: 'Prawn Club'
+languageCode: en-gb
+DefaultContentLanguage: en
+enableEmoji: true
+enableGitInfo: false
+enableRobotsTXT: true
+canonifyURLs: true
+paginate: 9
+enableInlineShortcodes: true
+
+params:
+  author: "Mr Prawns"
+  author_image: /images/defaults/author.jpg
+  og_image: /images/defaults/featured_image.jpg
+  moto: "Prawn Club."
+  description: "Join us in exploring the world of prawns, there's a plate waiting for you at our table."
+  google_analytics_id: '' # @NOTE: To remove the G2A tag, juste leave this key to an empty string.
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.110.0"
